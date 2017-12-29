@@ -13,11 +13,11 @@ import { HeroService } from '../hero.service';
 export class HeroesComponent implements OnInit {
   // heroes = HEROES;
   heroes: Hero[];
-  selectedHero : Hero;
+  //selectedHero : Hero;
 
   constructor(private heroService:HeroService) {
    // this.heroes = heroService.getHeroes()
-    //  console.log('h', this.heroes)
+   //  console.log('h', this.heroes)
   }
 
   ngOnInit() {
@@ -29,10 +29,10 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.heroService.getHeroes();
   }
 
-  onSelect(hero : Hero) : void {
-    console.log('hero before', this.selectedHero);
-    this.selectedHero = hero;
-    console.log('hero', this.selectedHero)
-  }
+  // onSelect(hero : Hero) : void {
+  //   console.log('hero before', this.selectedHero);
+  //   this.selectedHero = hero;
+  //   console.log('hero', this.selectedHero)
+  // }
 
 }
